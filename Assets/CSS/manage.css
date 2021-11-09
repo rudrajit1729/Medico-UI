@@ -1,0 +1,19 @@
+.bg-box {
+    height: 600px;
+    width: 1200px;
+    border-style: solid;
+    border-width: 35px;
+    border-color: #115CCD;
+    background: white;
+    border-radius: 10px;
+}
+
+.box-head {
+    background-color:#115CCD;
+    color: white;
+    font-weight: 300;
+    text-align: left;
+    width: 60%;
+    height: 35px;
+    line-height: 35px;
+}
