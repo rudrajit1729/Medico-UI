@@ -1,0 +1,8 @@
+.w-77 {
+    width: 77%;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #115CCD;
+    opacity: 1; /* Firefox */
+  }

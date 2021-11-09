@@ -1,0 +1,43 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.rounded_ {
+border-radius: 10px;
+}
+
+.mhc {
+    background-color:#115CCD;
+    color: white;
+    font-weight: 400;
+    text-align: center;
+    width: 60%;
+    height: 35px;
+    line-height: 35px;
+}
+
+.btns {
+    background-color:#115CCD;
+    color: white;
+    font-weight: 300;
+    text-align: center;
+    width: 20%;
+    height: 35px;
+    line-height: 20px;
+}
+
+.btns:hover {
+    border-color: #115CCD;
+    border-style: solid;
+    background-color: white;
+    color: #115CCD;
+}
+
+.ns {
+    overflow: hidden;
+}
+
+.color-blue {
+    color: #115CCD;
+}
+
