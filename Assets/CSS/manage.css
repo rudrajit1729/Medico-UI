@@ -2,18 +2,24 @@
     height: 600px;
     width: 1440px;
     border-style: solid;
-    border-width: 35px;
-    border-color: #115CCD;
-    background: white;
+    /* border-width: 35px; */
+    /* border-color: #115CCD; */
+    background: #115CCD;
     border-radius: 10px;
 }
 
-.box-head {
-    background-color:#115CCD;
+.appt {
     color: white;
-    font-weight: 300;
     text-align: left;
-    width: 60%;
-    height: 35px;
-    line-height: 35px;
+    font-weight: 400;
+    font-size: large;
+}
+
+.appt-box {
+    height: 510px;
+    width: 1380px;
+    /* border-width: 35px; */
+    /* border-color: #115CCD; */
+    background:white;
+    border-radius: 10px;
 }
