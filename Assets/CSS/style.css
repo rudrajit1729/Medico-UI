@@ -13,8 +13,8 @@ body {
     font-weight: 400;
     text-align: center;
     width: 60%;
-    height: 35px;
-    line-height: 35px;
+    height: auto;
+    line-height: 25px;
 }
 
 .btns {
@@ -22,13 +22,14 @@ body {
     color: white;
     font-weight: 300;
     text-align: center;
-    width: auto;
-    height: auto;
+    width: 20%;
+    height: 35px;
     line-height: 20px;
 }
+/* 
 .btns.lht{
     line-height: 25px;
-}
+} */
 
 .btns:hover {
     border-color: #115CCD;
