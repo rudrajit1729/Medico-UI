@@ -1,0 +1,34 @@
+.user{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+.color{
+    color: #115CCD;
+}
+.search{
+    border-radius:10px;
+}
+.sort{
+    box-align:inline;
+}
+.mhc {
+    background-color:#115CCD;
+    color: white;
+    font-weight: 400;
+    text-align: center;
+    width: 120%;
+    height: 35px;
+    line-height: 35px;
+}
+.w-40 {
+    width: 40%;
+}
+.box{
+    border-color: #115CCD;
+}
+#box{
+    /* border-color: #115CCD; */
+    border: 1px solid #115CCD;
+    border-radius: 10px; 
+}
