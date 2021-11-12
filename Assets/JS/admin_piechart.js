@@ -1,30 +1,31 @@
-const ctx = document.getElementById('myChart').getContext('2d');
-const myChart = new Chart(ctx, {
+const ctx1 = document.getElementById('myChart').getContext('2d');
+const mydata1 = {
+    labels: ['General Medicine', 'General Surgery', 'Pediatrics', 'Orthopedics', 'Dermatology', 'EMT'],
+    datasets: [{
+        label: '# of doctors',
+        data: [12, 19, 3, 5, 2, 3],
+        backgroundColor: [
+            'rgba(255, 99, 132, 0.2)',
+            'rgba(54, 162, 235, 0.2)',
+            'rgba(255, 206, 86, 0.2)',
+            'rgba(75, 192, 192, 0.2)',
+            'rgba(153, 102, 255, 0.2)',
+            'rgba(255, 159, 64, 0.2)'
+        ],
+        borderColor: [
+            'rgba(255, 99, 132, 1)',
+            'rgba(54, 162, 235, 1)',
+            'rgba(255, 206, 86, 1)',
+            'rgba(75, 192, 192, 1)',
+            'rgba(153, 102, 255, 1)',
+            'rgba(255, 159, 64, 1)'
+        ],
+        borderWidth: 1
+    }]
+};
+const myChart = new Chart(ctx1, {
     type: 'pie',
-    data: {
-        labels: ['General Medicine', 'General Surgery', 'Pediatrics', 'Orthopedics', 'Dermatology', 'EMT'],
-        datasets: [{
-            label: '# of doctors',
-            data: [12, 19, 3, 5, 2, 3],
-            backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)',
-                'rgba(255, 159, 64, 0.2)'
-            ],
-            borderColor: [
-                'rgba(255, 99, 132, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)'
-            ],
-            borderWidth: 1
-        }]
-    },
+    data: mydata1,
     options: {
         scales: {
             y: {
@@ -32,4 +33,14 @@ const myChart = new Chart(ctx, {
             }
         }
     }
+});
+var pTable = document.getElementById('pieTableBody');
+var j = 0;
+mydata1.labels.forEach(item => {
+    var row = pTable.insertRow();
+    var key = row.insertCell(0);
+    key.innerHTML = item;
+    var value = row.insertCell(1);
+    value.innerHTML = mydata1.datasets[0].data[j++];
+
 });
