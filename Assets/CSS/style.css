@@ -12,7 +12,7 @@ body {
     color: white;
     font-weight: 400;
     text-align: center;
-    width: 60%;
+    width: 100%;
     height: auto;
     line-height: 25px;
 }
@@ -33,6 +33,9 @@ body {
     background-color: white;
     color: #115CCD;
 }
+.fas:hover {
+    color: #115CCD;
+}
 
 .ns {
     overflow: hidden;
@@ -41,4 +44,3 @@ body {
 .color-blue {
     color: #115CCD;
 }
-
