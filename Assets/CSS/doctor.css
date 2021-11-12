@@ -1,0 +1,36 @@
+.appoint {
+    height: 350px;
+    border-color: #115CCD;
+    border-style: solid;
+    border-width: 1px;
+}
+.welcome{
+    border-color: #115CCD;
+    border-style: solid;
+    height: 200px;
+    background-color: aquamarine;
+}
+.welcome-width{
+    height: 100px;
+    width: 30px;
+}
+ .bzero{
+    border: 0;
+ }
+ .btnsreport{
+        background-color:#115CCD;
+        color: white;
+        font-weight: 300;
+        text-align: center;
+        width: 10%;
+        height: 35px;
+        line-height: 20px;
+    
+ }
+ .w-75 {
+    width: 75%;
+}
+.imgheight{
+    height: 200px;
+    width: 200px;
+}
