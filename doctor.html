@@ -16,26 +16,27 @@
     <link rel="stylesheet" href="Assets/CSS/doctor.css">
     <!-- JavaScript -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js'></script>
+    
     <title>Doctor</title>
 </head>
 
 <body>
     <div class="container">
         <!-- header -->
-        <div class="d-flex justify-content-center">
+        <div class="d-flex justify-content-center pt-2">
             <h5 class="rounded_ mhc text-center">Medico Health Care</h5>
         </div>
         <!-- Starting welcome -->
         <div class="row">
-            	<div class="welcome col-md-9 d-flex align-items-center p-5">
-                    <div>
+            	<div class="welcome d-flex align-items-center p-5">
+                    <div class="col-md-11">
                             <h2><span class="text-muted">Welcome</span> Dr Ray!</h2>
                             <p class="pt-4">You have remaining 3 appointments today</p>
                         </div>
-                </div>
-                <div class="col-md-3">
-                    <img src="Assets/Images/doctor.jpg" class="imgheight">
-                </div>
+                        <div class="col-md-2 d-flex justify-content-end">
+                            <img src="Assets/Images/doctor-profile.jpg" class=" imgheight">
+                        </div>
+                </div>      
         </div>
         <!-- Showing doctor list selecting date from calendar -->
         <div class="row px-2">
@@ -63,7 +64,7 @@
             </div>
             <!-- Bar graph -->
             <div class="col-md-6">
-                <canvas id="histogram" width="400" height="250"></canvas>
+                <canvas id="myChart2" width="400" height="250"></canvas>
             </div>
         </div>
         <!-- Adding generate report buttons -->
@@ -74,43 +75,7 @@
         </div>
 
     </div>
+    <script src="Assets/JS/doctor_bargraph.js"></script>
 </body>
 
 </html>
-<script>
-    const ctx = document.getElementById('histogram').getContext('2d');
-
-const chart = new Chart(ctx, {
-  type: 'bar',
-  data: {
-    labels: [0, 1, 2, 3, 4],
-    datasets: [{
-      label: 'Number of Arrivals',
-      data: [19, 28, 20, 16],
-      backgroundColor: '#115CCD',
-    }]
-  },
-  options: {
-    scales: {
-      xAxes: [{
-        display: false,
-        barPercentage: 0.2,
-        ticks: {
-          max: 3,
-        }
-      }, {
-        display: true,
-        ticks: {
-          autoSkip: false,
-          max: 4,
-        }
-      }],
-      yAxes: [{
-        ticks: {
-          beginAtZero: true
-        }
-      }]
-    }
-  }
-});
-</script>
