@@ -18,58 +18,68 @@
     <title>Login</title>
 </head>
 
+<body class="mx-4 my-4 ">
+    <div class="body-container">
 
-<body class="mt-2 pt-2">
-    <div class="row justify-content-center">
-        <!-- Header row -->
-        <div class="col-md-6 justify-content-center left-container">
-            <div class="d-flex justify-content-center">
-                <h5 class="rounded_ mhc text-center">Medico Health Care</h5> 
+        <nav class="d-flex justify-content-end px-5">
+            <p class="pt-1 px-4 fs-6 color-blue">New User?</p>
+            <!-- Register Button -->
+            <button class="btn rounded_ btns" onclick="window.location.href='register.html'">Register</button>
+        </nav>
+        <div class="row justify-content-center">
+            <!-- Header row -->
+            <div class=" col-sm-12 col-md-6 justify-content-center left-container">
+                <div class="d-flex justify-content-center">
+                    <h5 class="rounded_ mhc text-center">Medico Health Care</h5>
+                </div>
+                <div class="d-flex justify-content-center text-center d-desktop">
+                    <img src="Assets/Images/login_doctor_image.png" alt="avatar" width="525" height="540">
+                </div>
             </div>
-            <div class="d-flex justify-content-center">
-                <img src="Assets/Images/login_doctor_image.png" alt="avatar" width="525"
-                height="540">
+
+            <!-- Right Container - right screen -->
+            <div class=" col-sm-12 col-md-6 right-container">
+                <div class="login-form m-5 p-5">
+                    <form class="form-container">
+                        <div class="form-group row">
+                            <div class="d-flex py-5 w-100 justify-content-start">
+                                <label for="role" class="color-blue fs-4">Select Role&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                                <select id="role" class="w-50 form-control shadow" name="role">
+                                    <option value="Admin">Admin</option>
+                                    <option value="Doctor">Doctor</option>
+                                    <option value="Patient">Patient</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="d-flex py-5 w-100 justify-content-start">
+                                <label for="email" class="color-blue fs-4">Email
+                                    ID&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                                <input type="email" id="email" class="w-50 form-control color-blue shadow">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="d-flex py-5 w-100 justify-content-start">
+                                <label for="password"
+                                    class="color-blue fs-4">Password&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                                <input type="password" id="password" class="w-50 form-control color-blue shadow">
+                            </div>
+                        </div>
+                        <!-- Sign In Button -->
+                        <div class="d-flex justify-content-center"><button type="button" class="btn rounded_ btns text-center ">Sign
+                                In</button>
+                        </div>
+                    </form>
+                </div>
             </div>
+
         </div>
-
-        <!-- Right Container - right screen -->
-        <div class="col-md-6 right-container">
-            <nav class="d-flex justify-content-end px-5">
-                <p class="pt-1 px-4 fs-6 color-blue">New User?</p>
-                <!-- Register Button -->
-                <button class="btn rounded_ btns" onclick="window.location.href='register.html'">Register</button>
-            </nav>
-            <div class="login-form m-5 p-5">
-                <form>
-                    <div class = "d-flex py-5 w-100 justify-content-start">
-                        <label for="role" class="color-blue fs-4">Select Role&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                        <select id="role" class = "w-50 form-control shadow" name="role">
-                            <option value="Admin">Admin</option>
-                            <option value="Doctor">Doctor</option>
-                            <option value="Patient">Patient</option>
-                        </select>
-                    </div>
-                    <div class = "d-flex py-5 w-100 justify-content-start">
-                        <label for="email" class="color-blue fs-4">Email
-                            ID&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                        <input type="email" id="email" class = "w-50 form-control color-blue shadow">
-                    </div>
-                    <div class = "d-flex py-5 w-100 justify-content-start">
-                        <label for="password" class="color-blue fs-4">Password&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                        <input type="password" id="password" class = "w-50 form-control color-blue shadow">
-                    </div>
-                    <!-- Sign In Button -->
-                    <div class="d-flex justify-content-center"><button class="btn rounded_ btns text-center">Sign In</button></div>
-                </form>
-            </div>
-            
-        </div>
-
+        <footer>
+            <br>
+            <div class="d-flex justify-content-end px-5"><a href="mailto:rudrajitc@trainee.nrifintech.com">Contact Us @
+                    Medico</a></div>
+        </footer>
     </div>
-    <footer>
-        <br>
-        <div class="d-flex justify-content-end px-5"><a href="mailto:rudrajitc@trainee.nrifintech.com">Contact Us @ Medico</a></div>
-    </footer>
 </body>
 
 </html>
