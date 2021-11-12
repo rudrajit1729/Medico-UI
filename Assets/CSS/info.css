@@ -1,0 +1,53 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+.rounded_ {
+    border-radius: 10px;
+}
+.mhc {
+    background-color:#115CCD;
+    color: white;
+    font-weight: 400;
+    text-align: center;
+    width: 120%;
+    height: 35px;
+    line-height: 35px;
+}
+.fw-400 {
+    font-weight: 400;
+}
+.fw-500 {
+    font-weight: 500;
+}
+.fw-700 {
+    font-weight: 700;
+}
+.btns {
+    background-color:#115CCD;
+    color: white;
+    font-weight: 300;
+    text-align: center;
+    width: 90%;
+    height: 100%;
+    line-height: 20px;
+}
+.btns:hover {
+    border-color: #115CCD;
+    border-style: solid;
+    background-color: white;
+    color: #115CCD;
+}
+.w-93 {
+    width: 93%;
+}
+.w-40 {
+    width: 40%;
+}
+.far {
+    color: #115CCD;
+}
+.fas {
+    color: #115CCD;
+}
