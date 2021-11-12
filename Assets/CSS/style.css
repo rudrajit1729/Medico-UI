@@ -26,6 +26,9 @@ body {
     height: auto;
     line-height: 20px;
 }
+.btns.lht{
+    line-height: 25px;
+}
 
 .btns:hover {
     border-color: #115CCD;
