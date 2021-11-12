@@ -3,7 +3,8 @@ body {
 }
 
 .rounded_ {
-border-radius: 10px;
+    padding: inherit;
+    border-radius: 5px;
 }
 
 .mhc {
@@ -21,9 +22,12 @@ border-radius: 10px;
     color: white;
     font-weight: 300;
     text-align: center;
-    width: 20%;
-    height: 35px;
+    width: auto;
+    height: auto;
     line-height: 20px;
+}
+.btns.lht{
+    line-height: 25px;
 }
 
 .btns:hover {

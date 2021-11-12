@@ -1,0 +1,22 @@
+
+.debug1 {
+    background-color: brown;
+}
+
+.debug2 {
+    background-color: chartreuse;
+}
+
+::placeholder {
+    color: #115CCD;
+    opacity: 1;
+}
+
+.inputborder {
+    border: 1px solid #0B54AA;
+    border-radius: 5px;
+}
+
+.rightmargin2 {
+    margin-right: 10px;
+}
