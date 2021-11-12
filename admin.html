@@ -22,15 +22,16 @@
   <!-- Linking CSS File -->
   <link href="Assets/CSS/style.css" rel="stylesheet">
   <link rel="stylesheet" href="Assets/CSS/admin.css">
+  <link rel = "stylesheet" href="Assets/CSS/Patient.css">
   <title>admin</title>
 </head>
 
 <body>
-  <div class="container-fluid">
+  <div class="container">
     <!-- head -->
     <div class="p-3 row">
-      <div class="col-sm-12 col-md-7 d-flex justify-content-center order-1" style="">
-        <h5 class="rounded_  mhc text-center w-auto p-2 px-3" style="">
+      <div class="col-sm-12 col-md-7 d-flex justify-content-center order-1">
+        <h5 class="rounded_  mhc text-center w-auto p-2 px-3" >
           Medico Health Care
         </h5>
       </div>
@@ -55,8 +56,74 @@
       </div>
     </div>
 
+    <div class="row">
+      <div class="col-6">
+      <input type="text" placeholder="Search Doctor" class="w-100 search"/>
+      </div>
+      <div class="col-3">
+          <div class = "d-flex w-100">
+              <label for="role" class="color-blue fs-4">Search By&nbsp;&nbsp;&nbsp;&nbsp;</label>
+              <select id="role" class = "w-50 form-control shadow" name="role">
+                  <option value="Admin">Doctor</option>
+                  <option value="Doctor">Specialization</option>
+              </select>
+          </div>
+      </div>
+      <div class="col-3" style="display: flex;justify-content: space-around;">
+      <div>
+          <p>Sort By</p>
+      </div>
+      <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+          <label class="form-check-label" for="inlineRadio1">Price</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+          <label class="form-check-label" for="inlineRadio1">Upvotes</label>
+        </div>
+      </div>  
+  </div>
+      <div class="row" id="box" style="display: flex; justify-content: space-around;margin-top: 20px;">
+          <div class="col-4"style="display: flex;align-items: center;">
+              <div class="col-4">
+                  <img src="Assets\Images\profile.png" width="100" height="100" class="rounded_">
+              </div>
+              <div class="col-8">
+                  <p><b>Dr.Sandip Roy</b></p>
+                  <p>cardi</p>
+                  <p>fees:500</p>
+              </div>
+          </div>
+              <div class="col-4"style="display:flex;align-items:center; justify-content:center">
+                  <img src="Assets\Images\heart.png" width="35" height="35" class="rounded_">
+                  <aside>68 Upvotes</aside> 
 
-    <div class="d-flex justify-content-end">
+              </div>      
+          <div class="col-4" style="display: flex;align-items: center;justify-content: center;">
+              <button type = "submit" class="btn rounded_ btns text-center"onclick="window.location.href='user_info.html'">Edit</button>
+          </div>
+      </div> 
+      <div class="row" id="box" style="display: flex; justify-content: space-around;margin-top: 20px;">
+        <div class="col-4"style="display: flex;align-items: center;">
+            <div class="col-4">
+                <img src="Assets\Images\profile.png" width="100" height="100" class="rounded_">
+            </div>
+            <div class="col-8">
+                <p><b>Dr.Sandip Roy</b></p>
+                <p>cardi</p>
+                <p>fees:500</p>
+            </div>
+        </div>
+            <div class="col-4"style="display:flex;align-items:center; justify-content:center">
+                <img src="Assets\Images\heart.png" width="35" height="35" class="rounded_">
+                <aside>68 Upvotes</aside> 
+
+            </div>      
+        <div class="col-4" style="display: flex;align-items: center;justify-content: center;">
+            <button type = "submit" class="btn rounded_ btns text-center"onclick="window.location.href='user_info.html'">Edit</button>
+        </div>
+    </div> 
+    <div class="d-flex justify-content-end pt-2">
       <!-- add doctor modal button trigger  -->
       <button type="button" class="btn btm-primary rounded_ btns w-auto p-2" data-toggle="modal"
         data-target="#exampleModal">
