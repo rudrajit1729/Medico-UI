@@ -22,7 +22,7 @@
   <!-- Linking CSS File -->
   <link href="Assets/CSS/style.css" rel="stylesheet">
   <link rel="stylesheet" href="Assets/CSS/admin.css">
-  <link rel="stylesheet" href="Assets/CSS/Patient.css">
+  <!-- <link rel="stylesheet" href="Assets/CSS/Patient.css"> -->
   <title>admin</title>
 </head>
 
@@ -74,15 +74,15 @@
       <!-- sort by radio part -->
       <div class="col-xl-4 col-sm-12 d-flex justify-content-around p-2">
         <div>
-            <p>Sort By</p>
+          <label for="role" class="color-blue fs-4">Sort By</label>
         </div>
         <div class="form-check form-check-inline">
             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-            <label class="form-check-label" for="inlineRadio1">Price</label>
+            <label class="form-check-label color-blue fs-5" for="inlineRadio1">Price</label>
         </div>
         <div class="form-check form-check-inline">
           <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-          <label class="form-check-label" for="inlineRadio1">Upvotes</label>
+          <label class="form-check-label color-blue fs-5" for="inlineRadio1">Upvotes</label>
         </div>
       </div>  
     </div>
@@ -99,7 +99,7 @@
       </div>
       <div class="col-4" style="display:flex;align-items:center; justify-content:center">
         <div class="d-flex justify-content-center">
-          <i onclick="increase_likes(this)" class="far fa-heart my-auto"></i>
+          <i onclick="increase_likes(this)" class="upvote far fa-heart my-auto"></i>
           <p id="like_no" class="px-2 my-auto" style="color: #115CCD;">68</p>
           <p class="my-auto"><span class="fw-400" style="color: #115CCD;">Upvotes!</span></p>
         </div>
@@ -180,7 +180,7 @@
       </div>
       <div class="col-4" style="display:flex;align-items:center; justify-content:center">
         <div class="d-flex justify-content-center">
-          <i onclick="increase_likes(this)" class="far fa-heart my-auto"></i>
+          <i onclick="increase_likes(this)" class="upvote far fa-heart my-auto"></i>
           <p id="like_no" class="px-2 my-auto" style="color: #115CCD;">68</p>
           <p class="my-auto"><span class="fw-400" style="color: #115CCD;">Upvotes!</span></p>
         </div>
@@ -252,7 +252,7 @@
       <!-- add doctor modal button trigger  -->
       <button type="button" class="btn btm-primary rounded_ btns w-auto p-2" data-toggle="modal"
         data-target="#exampleModal">
-        <i class="fas fa-plus rounded_ w-100 d-inline" style="color: white;"></i> Add a Doctor
+        <i class="fas fa-plus rounded_ w-100 d-inline"></i> Add a Doctor
       </button>
       <!-- modal  -->
       <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"

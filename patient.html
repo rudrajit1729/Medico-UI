@@ -55,34 +55,35 @@
             <H2>Welcome Ramesh</H2>
         </div>
         <div class="row">
-            <div class="col-6">
-                <input type="text" placeholder="Search Doctor" class="w-100 search" />
+            <!-- search bar -->
+            <div class="col-xl-4 col-sm-12 p-2">
+              <input type="text" placeholder="Search Doctor" class="w-100 search"/>
             </div>
-            <div class="col-3">
-                <div class="d-flex w-100">
-                    <label for="role" class="color-blue fs-4">Search By&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                    <select id="role" class="w-50 form-control shadow" name="role">
+            <!-- search by button  -->
+            <div class="col-xl-4 col-sm-12 p-2">
+                <div class = "d-flex w-100 justify-content-around">
+                    <label for="role" class="color-blue fs-4">Search By</label>
+                    <select id="role" class = "w-50 form-control shadow" name="role">
                         <option value="Admin">Doctor</option>
                         <option value="Doctor">Specialization</option>
                     </select>
                 </div>
             </div>
-            <div class="col-3" style="display: flex;justify-content: space-around;">
-                <div>
-                    <p>Sort By</p>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
-                        value="option1">
-                    <label class="form-check-label" for="inlineRadio1">Price</label>
-                </div>
-                <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
-                        value="option1">
-                    <label class="form-check-label" for="inlineRadio1">Upvotes</label>
-                </div>
-            </div>
-        </div>
+            <!-- sort by radio part -->
+            <div class="col-xl-4 col-sm-12 d-flex justify-content-around p-2">
+              <div>
+                <label for="role" class="color-blue fs-4">Sort By</label>
+              </div>
+              <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                  <label class="form-check-label color-blue fs-5" for="inlineRadio1">Price</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                <label class="form-check-label color-blue fs-5" for="inlineRadio1">Upvotes</label>
+              </div>
+            </div>  
+          </div>
         <div class="row" id="box" style="display: flex; justify-content: space-around;margin-top: 20px;">
             <div class="col-4" style="display: flex;align-items: center;">
                 <div class="col-4">
