@@ -9,3 +9,5 @@ Front end for Medico Health Care - NRIFT.
 ### Satyam Bhardwaj
 ### Sumedha Samanta
 ### Soumyajit Panda
+
+# To merge with Medico Application
